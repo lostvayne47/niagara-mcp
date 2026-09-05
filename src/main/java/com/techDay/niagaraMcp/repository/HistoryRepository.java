@@ -3,13 +3,20 @@ package com.techDay.niagaraMcp.repository;
 import com.techDay.niagaraMcp.model.History;
 import com.techDay.niagaraMcp.model.History.HistoryQuality;
 import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVRecord;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @Repository
 public class HistoryRepository
 {
@@ -19,60 +26,43 @@ public class HistoryRepository
   @PostConstruct
   void init()
   {
-    addHistory(new History(
-      "HST-001",
-      "AHU-1 Zone Temperature",
-      "station:|slot:/HVAC/AHU-1/ZoneTemp",
-      22.5,
-      "°C",
-      LocalDateTime.of(2026, 9, 5, 12, 0, 0),
-      300,
-      HistoryQuality.OK
-    ));
+    try
+    {
+      Reader reader = new InputStreamReader(
+        new ClassPathResource("mock-data/histories.csv").getInputStream()
+      );
 
-    addHistory(new History(
-      "HST-002",
-      "AHU-2 Supply Air Temperature",
-      "station:|slot:/HVAC/AHU-2/SupplyAirTemp",
-      14.3,
-      "°C",
-      LocalDateTime.of(2026, 9, 5, 12, 0, 0),
-      300,
-      HistoryQuality.OK
-    ));
+      Iterable<CSVRecord> records = CSVFormat.DEFAULT
+        .builder()
+        .setHeader()
+        .setSkipHeaderRecord(true)
+        .build()
+        .parse(reader);
 
-    addHistory(new History(
-      "HST-003",
-      "Chiller Power Consumption",
-      "station:|slot:/HVAC/Chiller-1/PowerConsumption",
-      145.7,
-      "kWh",
-      LocalDateTime.of(2026, 9, 5, 12, 0, 0),
-      3600,
-      HistoryQuality.OK
-    ));
+      for (CSVRecord record : records)
+      {
+        String rawValue = record.get("value");
 
-    addHistory(new History(
-      "HST-004",
-      "Panel-A Main Voltage",
-      "station:|slot:/Electrical/Panel-A/MainVoltage",
-      230.1,
-      "V",
-      LocalDateTime.of(2026, 9, 5, 11, 55, 0),
-      60,
-      HistoryQuality.UNCERTAIN
-    ));
+        History history = new History(
+          record.get("id"),
+          record.get("displayName"),
+          record.get("sourcePath"),
+          rawValue.isBlank() ? null : Double.parseDouble(rawValue),
+          record.get("unit"),
+          LocalDateTime.parse(record.get("timestamp")),
+          Integer.parseInt(record.get("interval")),
+          HistoryQuality.valueOf(record.get("quality"))
+        );
 
-    addHistory(new History(
-      "HST-005",
-      "Zone 2 CO2 Level",
-      "station:|slot:/IAQ/Zone-2/CO2Level",
-      null,
-      "ppm",
-      LocalDateTime.of(2026, 9, 5, 11, 50, 0),
-      300,
-      HistoryQuality.BAD
-    ));
+        addHistory(history);
+      }
+
+      log.info("Loaded {} history records from CSV", historiesById.size());
+    }
+    catch (Exception e)
+    {
+      log.error("Failed to load histories from CSV", e);
+    }
   }
 
   private void addHistory(History history)

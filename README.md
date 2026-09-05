@@ -7,30 +7,81 @@ A Spring Boot MCP (Model Context Protocol) server that exposes BMS (Building Man
 ## Project Structure
 
 ```
-src/main/java/com/techDay/niagaraMcp/
+src/main/
 │
-├── model/
-│   ├── Alarm.java          # BMS Alarm record (id, displayName, sourcePath, priority, state, acknowledged, timestamp, acknowledgedBy, alarmClass)
-│   ├── History.java        # BMS History/Trend record (id, displayName, sourcePath, value, unit, timestamp, interval, quality)
-│   └── Point.java          # BMS Point record (id, displayName, path, value, unit, type, writable, status)
+├── java/com/techDay/niagaraMcp/
+│   │
+│   ├── model/
+│   │   ├── Alarm.java          # BMS Alarm record (id, displayName, sourcePath, priority, state, acknowledged, timestamp, acknowledgedBy, alarmClass)
+│   │   ├── History.java        # BMS History/Trend record (id, displayName, sourcePath, value, unit, timestamp, interval, quality)
+│   │   └── Point.java          # BMS Point record (id, displayName, path, value, unit, type, writable, status)
+│   │
+│   ├── repository/
+│   │   ├── AlarmRepository.java    # Loads alarms from alarms.csv at startup
+│   │   ├── HistoryRepository.java  # Loads history records from histories.csv at startup
+│   │   └── PointRepository.java    # Loads points from points.csv at startup
+│   │
+│   ├── service/
+│   │   ├── AlarmService.java       # Alarm business logic layer
+│   │   ├── HistoryService.java     # History business logic layer
+│   │   └── PointService.java       # Point business logic layer
+│   │
+│   ├── tool/
+│   │   ├── AlarmTool.java          # MCP-exposed alarm tools
+│   │   ├── HistoryTool.java        # MCP-exposed history tools
+│   │   └── PointTool.java          # MCP-exposed point tools
+│   │
+│   └── NiagaraMcpApplication.java  # Spring Boot entry point
 │
-├── repository/
-│   ├── AlarmRepository.java    # In-memory mock alarm data store
-│   ├── HistoryRepository.java  # In-memory mock history/trend data store
-│   └── PointRepository.java    # In-memory mock point data store
-│
-├── service/
-│   ├── AlarmService.java       # Alarm business logic layer
-│   ├── HistoryService.java     # History business logic layer
-│   └── PointService.java       # Point business logic layer
-│
-├── tool/
-│   ├── AlarmTool.java          # MCP-exposed alarm tools
-│   ├── HistoryTool.java        # MCP-exposed history tools
-│   └── PointTool.java          # MCP-exposed point tools
-│
-└── NiagaraMcpApplication.java  # Spring Boot entry point
+└── resources/
+    └── mock-data/
+        ├── alarms.csv              # Mock alarm data (add rows to scale up)
+        ├── histories.csv           # Mock history/trend data (add rows to scale up)
+        └── points.csv              # Mock point data (add rows to scale up)
 ```
+
+---
+
+## Mock Data (CSV)
+
+Mock data lives in `src/main/resources/mock-data/`. Each repository reads its CSV at startup via `ClassPathResource` and **Apache Commons CSV**. No database or code changes needed — just add rows to scale up.
+
+### alarms.csv
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | String | e.g. `ALM-001` |
+| `displayName` | String | Human-readable alarm name |
+| `sourcePath` | String | Niagara station path |
+| `priority` | Enum | `CRITICAL`, `HIGH`, `MEDIUM`, `LOW` |
+| `state` | Enum | `ACTIVE`, `NORMAL`, `OFFNORMAL` |
+| `acknowledged` | boolean | `true` / `false` |
+| `timestamp` | ISO DateTime | e.g. `2026-09-05T08:15:00` |
+| `acknowledgedBy` | String | Blank if unacknowledged |
+| `alarmClass` | String | e.g. `LifeSafety`, `Mechanical`, `Electrical` |
+
+### histories.csv
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | String | e.g. `HST-001` |
+| `displayName` | String | Human-readable history name |
+| `sourcePath` | String | Niagara station path |
+| `value` | Double | Blank if quality is `BAD` |
+| `unit` | String | Engineering unit, e.g. `°C`, `kWh`, `V` |
+| `timestamp` | ISO DateTime | Last recorded timestamp |
+| `interval` | int | Logging interval in seconds |
+| `quality` | Enum | `OK`, `BAD`, `UNCERTAIN` |
+
+### points.csv
+| Column | Type | Notes |
+|--------|------|-------|
+| `id` | String | e.g. `PNT-001` |
+| `displayName` | String | Human-readable point name |
+| `path` | String | Niagara station path |
+| `value` | String | Current value (any type serialized as string) |
+| `unit` | String | Engineering unit, blank for non-numeric |
+| `type` | Enum | `NUMERIC`, `BOOLEAN`, `ENUM`, `STRING` |
+| `writable` | boolean | `true` if operator-commandable |
+| `status` | Enum | `OK`, `FAULT`, `DISABLED`, `OVERRIDDEN` |
 
 ---
 
@@ -107,9 +158,10 @@ enum PointStatus { OK, FAULT, DISABLED, OVERRIDDEN }
 
 ## Tech Stack
 
-- **Java 21**
-- **Spring Boot 3**
+- **Java 17**
+- **Spring Boot 4**
 - **Spring AI MCP Server**
+- **Apache Commons CSV** — CSV parsing for mock data
 - **Lombok**
 - **Gradle**
 
@@ -121,4 +173,5 @@ enum PointStatus { OK, FAULT, DISABLED, OVERRIDDEN }
 ./gradlew bootRun
 ```
 
-> Mock data is loaded in-memory via `@PostConstruct` on each repository. No database required.
+> CSV files are loaded from `src/main/resources/mock-data/` at startup via `@PostConstruct`.
+> To add more mock data, simply append rows to the CSV files and restart.

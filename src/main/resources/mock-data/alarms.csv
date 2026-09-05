@@ -1,0 +1,6 @@
+id,displayName,sourcePath,priority,state,acknowledged,timestamp,acknowledgedBy,alarmClass
+ALM-001,High Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTempAlarm,CRITICAL,ACTIVE,false,2026-09-05T08:15:00,,LifeSafety
+ALM-002,Chiller Fault,station:|slot:/HVAC/Chiller-1/FaultAlarm,HIGH,OFFNORMAL,false,2026-09-05T09:30:00,,Mechanical
+ALM-003,Low Differential Pressure,station:|slot:/HVAC/AHU-2/DiffPressAlarm,MEDIUM,NORMAL,true,2026-09-04T14:00:00,operator1,Mechanical
+ALM-004,Panel Door Open,station:|slot:/Electrical/Panel-A/DoorAlarm,LOW,NORMAL,true,2026-09-03T11:45:00,operator2,Electrical
+ALM-005,Fire Detector Triggered,station:|slot:/Fire/Zone-2/SmokeDetectorAlarm,CRITICAL,ACTIVE,false,2026-09-05T10:05:00,,LifeSafety

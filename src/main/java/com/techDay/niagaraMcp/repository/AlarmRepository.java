@@ -4,13 +4,20 @@ import com.techDay.niagaraMcp.model.Alarm;
 import com.techDay.niagaraMcp.model.Alarm.AlarmPriority;
 import com.techDay.niagaraMcp.model.Alarm.AlarmState;
 import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVRecord;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @Repository
 public class AlarmRepository
 {
@@ -20,65 +27,44 @@ public class AlarmRepository
   @PostConstruct
   void init()
   {
-    addAlarm(new Alarm(
-      "ALM-001",
-      "High Zone Temperature",
-      "station:|slot:/HVAC/AHU-1/ZoneTempAlarm",
-      AlarmPriority.CRITICAL,
-      AlarmState.ACTIVE,
-      false,
-      LocalDateTime.of(2026, 9, 5, 8, 15, 0),
-      null,
-      "LifeSafety"
-    ));
+    try
+    {
+      Reader reader = new InputStreamReader(
+        new ClassPathResource("mock-data/alarms.csv").getInputStream()
+      );
 
-    addAlarm(new Alarm(
-      "ALM-002",
-      "Chiller Fault",
-      "station:|slot:/HVAC/Chiller-1/FaultAlarm",
-      AlarmPriority.HIGH,
-      AlarmState.OFFNORMAL,
-      false,
-      LocalDateTime.of(2026, 9, 5, 9, 30, 0),
-      null,
-      "Mechanical"
-    ));
+      Iterable<CSVRecord> records = CSVFormat.DEFAULT
+        .builder()
+        .setHeader()
+        .setSkipHeaderRecord(true)
+        .build()
+        .parse(reader);
 
-    addAlarm(new Alarm(
-      "ALM-003",
-      "Low Differential Pressure",
-      "station:|slot:/HVAC/AHU-2/DiffPressAlarm",
-      AlarmPriority.MEDIUM,
-      AlarmState.NORMAL,
-      true,
-      LocalDateTime.of(2026, 9, 4, 14, 0, 0),
-      "operator1",
-      "Mechanical"
-    ));
+      for (CSVRecord record : records)
+      {
+        String acknowledgedBy = record.get("acknowledgedBy");
 
-    addAlarm(new Alarm(
-      "ALM-004",
-      "Panel Door Open",
-      "station:|slot:/Electrical/Panel-A/DoorAlarm",
-      AlarmPriority.LOW,
-      AlarmState.NORMAL,
-      true,
-      LocalDateTime.of(2026, 9, 3, 11, 45, 0),
-      "operator2",
-      "Electrical"
-    ));
+        Alarm alarm = new Alarm(
+          record.get("id"),
+          record.get("displayName"),
+          record.get("sourcePath"),
+          AlarmPriority.valueOf(record.get("priority")),
+          AlarmState.valueOf(record.get("state")),
+          Boolean.parseBoolean(record.get("acknowledged")),
+          LocalDateTime.parse(record.get("timestamp")),
+          acknowledgedBy.isBlank() ? null : acknowledgedBy,
+          record.get("alarmClass")
+        );
 
-    addAlarm(new Alarm(
-      "ALM-005",
-      "Fire Detector Triggered",
-      "station:|slot:/Fire/Zone-2/SmokeDetectorAlarm",
-      AlarmPriority.CRITICAL,
-      AlarmState.ACTIVE,
-      false,
-      LocalDateTime.of(2026, 9, 5, 10, 5, 0),
-      null,
-      "LifeSafety"
-    ));
+        addAlarm(alarm);
+      }
+
+      log.info("Loaded {} alarms from CSV", alarmsById.size());
+    }
+    catch (Exception e)
+    {
+      log.error("Failed to load alarms from CSV", e);
+    }
   }
 
   private void addAlarm(Alarm alarm)

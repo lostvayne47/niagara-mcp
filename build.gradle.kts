@@ -23,6 +23,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-webmvc")
 	implementation("org.springdoc:springdoc-openapi-starter-webmvc-ui:3.1.0")
 	implementation("org.springframework.ai:spring-ai-starter-mcp-server-webmvc")
+	implementation("org.apache.commons:commons-csv:1.12.0")
 	compileOnly("org.projectlombok:lombok")
 	annotationProcessor("org.projectlombok:lombok")
 	testImplementation("org.springframework.boot:spring-boot-starter-webmvc-test")

@@ -4,12 +4,19 @@ import com.techDay.niagaraMcp.model.Point;
 import com.techDay.niagaraMcp.model.Point.PointStatus;
 import com.techDay.niagaraMcp.model.Point.PointType;
 import jakarta.annotation.PostConstruct;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVRecord;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Repository;
 
+import java.io.InputStreamReader;
+import java.io.Reader;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 @Repository
 public class PointRepository
 {
@@ -19,82 +26,41 @@ public class PointRepository
   @PostConstruct
   void init()
   {
-    addPoint(new Point(
-      "PNT-001",
-      "AHU-1 Zone Temperature",
-      "station:|slot:/HVAC/AHU-1/ZoneTemp",
-      "22.5",
-      "°C",
-      PointType.NUMERIC,
-      false,
-      PointStatus.OK
-    ));
+    try
+    {
+      Reader reader = new InputStreamReader(
+        new ClassPathResource("mock-data/points.csv").getInputStream()
+      );
 
-    addPoint(new Point(
-      "PNT-002",
-      "AHU-1 Fan Status",
-      "station:|slot:/HVAC/AHU-1/FanStatus",
-      "true",
-      "",
-      PointType.BOOLEAN,
-      false,
-      PointStatus.OK
-    ));
+      Iterable<CSVRecord> records = CSVFormat.DEFAULT
+        .builder()
+        .setHeader()
+        .setSkipHeaderRecord(true)
+        .build()
+        .parse(reader);
 
-    addPoint(new Point(
-      "PNT-003",
-      "Chiller Operating Mode",
-      "station:|slot:/HVAC/Chiller-1/OperatingMode",
-      "COOLING",
-      "",
-      PointType.ENUM,
-      true,
-      PointStatus.OK
-    ));
+      for (CSVRecord record : records)
+      {
+        Point point = new Point(
+          record.get("id"),
+          record.get("displayName"),
+          record.get("path"),
+          record.get("value"),
+          record.get("unit"),
+          PointType.valueOf(record.get("type")),
+          Boolean.parseBoolean(record.get("writable")),
+          PointStatus.valueOf(record.get("status"))
+        );
 
-    addPoint(new Point(
-      "PNT-004",
-      "AHU-2 Damper Position",
-      "station:|slot:/HVAC/AHU-2/DamperPosition",
-      "75.0",
-      "%",
-      PointType.NUMERIC,
-      true,
-      PointStatus.OVERRIDDEN
-    ));
+        addPoint(point);
+      }
 
-    addPoint(new Point(
-      "PNT-005",
-      "Zone 2 Occupancy Sensor",
-      "station:|slot:/IAQ/Zone-2/OccupancySensor",
-      "OCCUPIED",
-      "",
-      PointType.ENUM,
-      false,
-      PointStatus.OK
-    ));
-
-    addPoint(new Point(
-      "PNT-006",
-      "Panel-A Circuit Breaker 3",
-      "station:|slot:/Electrical/Panel-A/CB-3/Status",
-      "false",
-      "",
-      PointType.BOOLEAN,
-      false,
-      PointStatus.FAULT
-    ));
-
-    addPoint(new Point(
-      "PNT-007",
-      "BMS System Status Message",
-      "station:|slot:/System/StatusMessage",
-      "All systems operational",
-      "",
-      PointType.STRING,
-      true,
-      PointStatus.OK
-    ));
+      log.info("Loaded {} points from CSV", pointsById.size());
+    }
+    catch (Exception e)
+    {
+      log.error("Failed to load points from CSV", e);
+    }
   }
 
   private void addPoint(Point point)

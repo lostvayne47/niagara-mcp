@@ -1,0 +1,6 @@
+id,displayName,sourcePath,value,unit,timestamp,interval,quality
+HST-001,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,22.5,°C,2026-09-05T12:00:00,300,OK
+HST-002,AHU-2 Supply Air Temperature,station:|slot:/HVAC/AHU-2/SupplyAirTemp,14.3,°C,2026-09-05T12:00:00,300,OK
+HST-003,Chiller Power Consumption,station:|slot:/HVAC/Chiller-1/PowerConsumption,145.7,kWh,2026-09-05T12:00:00,3600,OK
+HST-004,Panel-A Main Voltage,station:|slot:/Electrical/Panel-A/MainVoltage,230.1,V,2026-09-05T11:55:00,60,UNCERTAIN
+HST-005,Zone 2 CO2 Level,station:|slot:/IAQ/Zone-2/CO2Level,,ppm,2026-09-05T11:50:00,300,BAD
