@@ -1,21 +1,41 @@
 id,displayName,sourcePath,priority,state,acknowledged,timestamp,acknowledgedBy,alarmClass
-ALM-001,High Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTempAlarm,CRITICAL,ACTIVE,false,2026-09-05T08:15:00,,LifeSafety
-ALM-002,Chiller Fault,station:|slot:/HVAC/Chiller-1/FaultAlarm,HIGH,OFFNORMAL,false,2026-09-05T09:30:00,,Mechanical
-ALM-003,Low Differential Pressure,station:|slot:/HVAC/AHU-2/DiffPressAlarm,MEDIUM,NORMAL,true,2026-09-04T14:00:00,operator1,Mechanical
-ALM-004,Panel Door Open,station:|slot:/Electrical/Panel-A/DoorAlarm,LOW,NORMAL,true,2026-09-03T11:45:00,operator2,Electrical
-ALM-005,Fire Detector Triggered,station:|slot:/Fire/Zone-2/SmokeDetectorAlarm,CRITICAL,ACTIVE,false,2026-09-05T10:05:00,,LifeSafety
-ALM-006,High Supply Air Temperature,station:|slot:/HVAC/AHU-3/SupplyAirTempAlarm,HIGH,ACTIVE,false,2026-09-05T11:00:00,,Mechanical
-ALM-007,Boiler High Pressure,station:|slot:/HVAC/Boiler-1/HighPressAlarm,CRITICAL,ACTIVE,false,2026-09-05T07:45:00,,LifeSafety
-ALM-008,Low Chilled Water Flow,station:|slot:/HVAC/CHW/FlowAlarm,HIGH,OFFNORMAL,false,2026-09-05T06:30:00,,Mechanical
-ALM-009,UPS Battery Low,station:|slot:/Electrical/UPS-1/BatteryAlarm,HIGH,ACTIVE,false,2026-09-05T09:00:00,,Electrical
-ALM-010,Generator Fail to Start,station:|slot:/Electrical/Generator-1/StartFailAlarm,CRITICAL,OFFNORMAL,true,2026-09-04T23:15:00,operator1,Electrical
-ALM-011,High CO2 Level Zone 3,station:|slot:/IAQ/Zone-3/CO2Alarm,MEDIUM,ACTIVE,false,2026-09-05T10:30:00,,LifeSafety
-ALM-012,Water Leak Detected B2,station:|slot:/Plumbing/B2/LeakAlarm,CRITICAL,ACTIVE,false,2026-09-05T11:20:00,,LifeSafety
-ALM-013,Cooling Tower Fan Fault,station:|slot:/HVAC/CT-1/FanFaultAlarm,MEDIUM,NORMAL,true,2026-09-04T16:00:00,operator2,Mechanical
-ALM-014,Emergency Light Fault Zone 1,station:|slot:/Lighting/Zone-1/EmergencyLightAlarm,MEDIUM,OFFNORMAL,false,2026-09-05T08:50:00,,Electrical
-ALM-015,AHU-4 Belt Broken,station:|slot:/HVAC/AHU-4/BeltAlarm,HIGH,ACTIVE,false,2026-09-05T10:55:00,,Mechanical
-ALM-016,Low Domestic Hot Water Temp,station:|slot:/Plumbing/DHW/TempAlarm,MEDIUM,ACTIVE,false,2026-09-05T07:00:00,,Mechanical
-ALM-017,Sprinkler System Activated Floor 3,station:|slot:/Fire/Floor-3/SprinklerAlarm,CRITICAL,ACTIVE,false,2026-09-05T11:45:00,,LifeSafety
-ALM-018,Access Control Breach Server Room,station:|slot:/Security/ServerRoom/AccessAlarm,HIGH,NORMAL,true,2026-09-04T22:30:00,operator1,Security
-ALM-019,Condenser Pump Overload,station:|slot:/HVAC/CW/PumpOverloadAlarm,HIGH,OFFNORMAL,false,2026-09-05T09:10:00,,Mechanical
-ALM-020,High Humidity Level Zone 5,station:|slot:/IAQ/Zone-5/HumidityAlarm,LOW,NORMAL,true,2026-09-03T13:00:00,operator2,Mechanical
+ALM-001,AHU-1 Zone High Temperature,station:|slot:/HVAC/AHU-1/ZoneTempAlarm,HIGH,ACTIVE,false,2026-09-05T08:15:00,,Mechanical
+ALM-002,AHU-3 Zone High Temperature,station:|slot:/HVAC/AHU-3/ZoneTempAlarm,HIGH,ACTIVE,false,2026-09-05T09:20:00,,Mechanical
+ALM-003,AHU-3 Fan at Maximum Speed,station:|slot:/HVAC/AHU-3/FanMaxSpeedAlarm,MEDIUM,ACTIVE,false,2026-09-05T09:20:00,,Mechanical
+ALM-004,AHU-3 Cooling Valve Fully Open,station:|slot:/HVAC/AHU-3/CoolingValveAlarm,MEDIUM,ACTIVE,false,2026-09-05T09:22:00,,Mechanical
+ALM-005,AHU-4 Fan Fault — Belt Broken,station:|slot:/HVAC/AHU-4/BeltAlarm,HIGH,ACTIVE,false,2026-09-05T10:55:00,,Mechanical
+ALM-006,AHU-4 Fan Status Off Due to Fault,station:|slot:/HVAC/AHU-4/FanFaultAlarm,HIGH,ACTIVE,false,2026-09-05T10:55:00,,Mechanical
+ALM-007,Chiller-1 Fault Active,station:|slot:/HVAC/Chiller-1/FaultAlarm,HIGH,ACTIVE,false,2026-09-05T09:30:00,,Mechanical
+ALM-008,Chiller-1 Power High — Efficiency Drop,station:|slot:/HVAC/Chiller-1/PowerAlarm,MEDIUM,ACTIVE,false,2026-09-05T09:35:00,,Mechanical
+ALM-009,Boiler-1 Water Temp High,station:|slot:/HVAC/Boiler-1/WaterTempHighAlarm,CRITICAL,ACTIVE,false,2026-09-05T07:45:00,,LifeSafety
+ALM-010,Boiler-1 Flue Gas Temp High,station:|slot:/HVAC/Boiler-1/FlueGasTempAlarm,HIGH,ACTIVE,false,2026-09-05T07:50:00,,Mechanical
+ALM-011,Condenser Water Return Temp High,station:|slot:/HVAC/CW/ReturnTempAlarm,MEDIUM,ACTIVE,false,2026-09-05T09:10:00,,Mechanical
+ALM-012,AHU-2 Cooling Valve Overridden,station:|slot:/HVAC/AHU-2/CoolingValveOverrideAlarm,LOW,ACTIVE,false,2026-09-05T06:00:00,,Mechanical
+ALM-013,AHU-1 Cooling Valve Near Fully Open,station:|slot:/HVAC/AHU-1/CoolingValveHighAlarm,MEDIUM,ACTIVE,false,2026-09-05T08:20:00,,Mechanical
+ALM-014,Server Room Temp High — PAC Fault,station:|slot:/HVAC/ServerRoom/TempHighAlarm,CRITICAL,ACTIVE,false,2026-09-05T11:30:00,,LifeSafety
+ALM-015,Server Room PAC in Fault State,station:|slot:/HVAC/ServerRoom/PAC/FaultAlarm,CRITICAL,ACTIVE,false,2026-09-05T11:15:00,,Mechanical
+ALM-016,UPS-1 On Battery — Mains Lost,station:|slot:/Electrical/UPS-1/OnBatteryAlarm,HIGH,ACTIVE,false,2026-09-05T09:00:00,,Electrical
+ALM-017,UPS-1 Battery Level Low,station:|slot:/Electrical/UPS-1/BatteryLowAlarm,HIGH,ACTIVE,false,2026-09-05T09:05:00,,Electrical
+ALM-018,UPS-1 Estimated Runtime Critical,station:|slot:/Electrical/UPS-1/RuntimeLowAlarm,CRITICAL,ACTIVE,false,2026-09-05T09:10:00,,Electrical
+ALM-019,Panel-A CB-3 Circuit Breaker Tripped,station:|slot:/Electrical/Panel-A/CB-3/TripAlarm,HIGH,ACTIVE,false,2026-09-05T08:40:00,,Electrical
+ALM-020,Panel-A Bad Voltage Sensor,station:|slot:/Electrical/Panel-A/VoltageSensorFault,MEDIUM,ACTIVE,false,2026-09-05T11:55:00,,Electrical
+ALM-021,Zone-3 CO2 Level High,station:|slot:/IAQ/Zone-3/CO2Alarm,HIGH,ACTIVE,false,2026-09-05T10:30:00,,LifeSafety
+ALM-022,Zone-2 CO2 Level Elevated,station:|slot:/IAQ/Zone-2/CO2ElevatedAlarm,MEDIUM,ACTIVE,false,2026-09-05T11:00:00,,LifeSafety
+ALM-023,Zone-5 Humidity High,station:|slot:/IAQ/Zone-5/HumidityAlarm,MEDIUM,ACTIVE,false,2026-09-05T10:00:00,,Mechanical
+ALM-024,Zone-5 Humidity Sensor Uncertain,station:|slot:/IAQ/Zone-5/HumiditySensorAlarm,LOW,ACTIVE,false,2026-09-05T10:00:00,,Mechanical
+ALM-025,DHW Temperature Below Legionella Threshold,station:|slot:/Plumbing/DHW/TempLowAlarm,HIGH,ACTIVE,false,2026-09-05T07:00:00,,LifeSafety
+ALM-026,Water Leak Detected B2,station:|slot:/Plumbing/B2/LeakAlarm,CRITICAL,ACTIVE,false,2026-09-05T11:20:00,,LifeSafety
+ALM-027,Fire Detector Zone-2 Triggered,station:|slot:/Fire/Zone-2/SmokeDetectorAlarm,CRITICAL,ACTIVE,false,2026-09-05T10:05:00,,LifeSafety
+ALM-028,Sprinkler Zone-3 Activated,station:|slot:/Fire/Floor-3/SprinklerAlarm,CRITICAL,ACTIVE,false,2026-09-05T11:45:00,,LifeSafety
+ALM-029,Emergency Light Zone-1 Fault,station:|slot:/Lighting/Zone-1/EmergencyLightAlarm,MEDIUM,ACTIVE,false,2026-09-05T08:50:00,,Electrical
+ALM-030,Zone-2 Lighting Disabled,station:|slot:/Lighting/Zone-2/LightingDisabledAlarm,LOW,ACTIVE,false,2026-09-05T06:30:00,,Electrical
+ALM-031,Server Room Door Left Open,station:|slot:/Security/ServerRoom/DoorOpenAlarm,HIGH,ACTIVE,false,2026-09-05T11:00:00,,Security
+ALM-032,FCU-B1-02 Zone Temp High,station:|slot:/HVAC/FCU/B1-02/ZoneTempAlarm,LOW,ACTIVE,false,2026-09-05T11:55:00,,Mechanical
+ALM-033,AHU-2 Differential Pressure Low,station:|slot:/HVAC/AHU-2/DiffPressAlarm,MEDIUM,OFFNORMAL,true,2026-09-04T14:00:00,operator1,Mechanical
+ALM-034,Zone-2 CO2 Sensor Fault,station:|slot:/IAQ/Zone-2/CO2SensorFaultAlarm,MEDIUM,OFFNORMAL,false,2026-09-05T11:50:00,,Mechanical
+ALM-035,Server Room PAC Sensor Lost,station:|slot:/HVAC/ServerRoom/PAC/SensorAlarm,HIGH,OFFNORMAL,false,2026-09-05T11:45:00,,Mechanical
+ALM-036,CHW Flow Rate Low,station:|slot:/HVAC/CHW/FlowAlarm,HIGH,OFFNORMAL,false,2026-09-05T06:30:00,,Mechanical
+ALM-037,Generator-1 Fail to Start Test,station:|slot:/Electrical/Generator-1/StartFailAlarm,CRITICAL,OFFNORMAL,true,2026-09-04T23:15:00,operator1,Electrical
+ALM-038,Cooling Tower Fan Running at Low Efficiency,station:|slot:/HVAC/CT-1/EfficiencyAlarm,LOW,NORMAL,true,2026-09-04T16:00:00,operator2,Mechanical
+ALM-039,Panel Door Open Electrical Room A,station:|slot:/Electrical/Panel-A/DoorAlarm,LOW,NORMAL,true,2026-09-03T11:45:00,operator2,Electrical
+ALM-040,Access Control Breach — Stairwell Door,station:|slot:/Security/Stairwell/AccessAlarm,HIGH,NORMAL,true,2026-09-04T22:30:00,operator1,Security

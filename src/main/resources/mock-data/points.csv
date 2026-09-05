@@ -1,41 +1,121 @@
 id,displayName,path,value,unit,type,writable,status
-PNT-001,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,22.5,°C,NUMERIC,false,OK
-PNT-002,AHU-1 Fan Status,station:|slot:/HVAC/AHU-1/FanStatus,true,,BOOLEAN,false,OK
-PNT-003,Chiller Operating Mode,station:|slot:/HVAC/Chiller-1/OperatingMode,COOLING,,ENUM,true,OK
-PNT-004,AHU-2 Damper Position,station:|slot:/HVAC/AHU-2/DamperPosition,75.0,%,NUMERIC,true,OVERRIDDEN
-PNT-005,Zone 2 Occupancy Sensor,station:|slot:/IAQ/Zone-2/OccupancySensor,OCCUPIED,,ENUM,false,OK
-PNT-006,Panel-A Circuit Breaker 3,station:|slot:/Electrical/Panel-A/CB-3/Status,false,,BOOLEAN,false,FAULT
-PNT-007,BMS System Status Message,station:|slot:/System/StatusMessage,All systems operational,,STRING,true,OK
-PNT-008,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,26.8,°C,NUMERIC,false,OK
-PNT-009,AHU-3 Fan Status,station:|slot:/HVAC/AHU-3/FanStatus,true,,BOOLEAN,false,OK
-PNT-010,AHU-4 Fan Status,station:|slot:/HVAC/AHU-4/FanStatus,false,,BOOLEAN,false,FAULT
-PNT-011,AHU-4 Zone Temperature,station:|slot:/HVAC/AHU-4/ZoneTemp,21.2,°C,NUMERIC,false,OK
-PNT-012,Boiler-1 Enable,station:|slot:/HVAC/Boiler-1/Enable,true,,BOOLEAN,true,OK
-PNT-013,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,72.4,°C,NUMERIC,false,OK
-PNT-014,Chiller-1 Enable,station:|slot:/HVAC/Chiller-1/Enable,true,,BOOLEAN,true,OK
-PNT-015,Chilled Water Supply Setpoint,station:|slot:/HVAC/CHW/SupplyTempSetpoint,7.0,°C,NUMERIC,true,OK
-PNT-016,Chilled Water Return Temperature,station:|slot:/HVAC/CHW/ReturnTemp,12.1,°C,NUMERIC,false,OK
-PNT-017,Cooling Tower Fan Enable,station:|slot:/HVAC/CT-1/FanEnable,true,,BOOLEAN,true,OK
-PNT-018,Cooling Tower Fan Speed,station:|slot:/HVAC/CT-1/FanSpeed,78.5,%,NUMERIC,true,OK
-PNT-019,AHU-1 Cooling Valve Position,station:|slot:/HVAC/AHU-1/CoolingValve,45.0,%,NUMERIC,true,OK
-PNT-020,AHU-2 Cooling Valve Position,station:|slot:/HVAC/AHU-2/CoolingValve,60.0,%,NUMERIC,true,OVERRIDDEN
-PNT-021,Zone 1 CO2 Level,station:|slot:/IAQ/Zone-1/CO2Level,620.0,ppm,NUMERIC,false,OK
-PNT-022,Zone 3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2Level,1180.5,ppm,NUMERIC,false,OK
-PNT-023,Zone 1 Humidity,station:|slot:/IAQ/Zone-1/Humidity,55.2,%,NUMERIC,false,OK
-PNT-024,Zone 1 Occupancy,station:|slot:/IAQ/Zone-1/Occupancy,OCCUPIED,,ENUM,false,OK
-PNT-025,Zone 3 Occupancy,station:|slot:/IAQ/Zone-3/Occupancy,UNOCCUPIED,,ENUM,false,OK
-PNT-026,Panel-A Main Voltage,station:|slot:/Electrical/Panel-A/MainVoltage,230.1,V,NUMERIC,false,OK
-PNT-027,Panel-B Main Voltage,station:|slot:/Electrical/Panel-B/MainVoltage,229.7,V,NUMERIC,false,OK
-PNT-028,UPS-1 Status,station:|slot:/Electrical/UPS-1/Status,ON_BATTERY,,ENUM,false,OK
-PNT-029,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,38.0,%,NUMERIC,false,OK
-PNT-030,Generator-1 Status,station:|slot:/Electrical/Generator-1/Status,STANDBY,,ENUM,false,OK
-PNT-031,Generator-1 Fuel Level,station:|slot:/Electrical/Generator-1/FuelLevel,64.0,%,NUMERIC,false,OK
-PNT-032,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,48.3,°C,NUMERIC,false,OK
-PNT-033,DHW Circulation Pump Status,station:|slot:/Plumbing/DHW/PumpStatus,true,,BOOLEAN,true,OK
-PNT-034,Fire Panel Zone 1 Status,station:|slot:/Fire/Zone-1/Status,NORMAL,,ENUM,false,OK
-PNT-035,Fire Panel Zone 2 Status,station:|slot:/Fire/Zone-2/Status,ALARM,,ENUM,false,OK
-PNT-036,Sprinkler Zone 3 Status,station:|slot:/Fire/Floor-3/SprinklerStatus,ACTIVE,,ENUM,false,OK
-PNT-037,Zone 1 Lighting Level,station:|slot:/Lighting/Zone-1/Level,80.0,%,NUMERIC,true,OK
-PNT-038,Zone 2 Lighting Level,station:|slot:/Lighting/Zone-2/Level,0.0,%,NUMERIC,true,DISABLED
-PNT-039,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,24.1,°C,NUMERIC,false,OK
-PNT-040,AHU-1 Supply Air Temperature,station:|slot:/HVAC/AHU-1/SupplyAirTemp,13.8,°C,NUMERIC,false,OK
+PNT-001,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,29.4,°C,NUMERIC,false,OK
+PNT-002,AHU-1 Zone Temp Setpoint,station:|slot:/HVAC/AHU-1/ZoneTempSP,24.0,°C,NUMERIC,true,OK
+PNT-003,AHU-1 Fan Status,station:|slot:/HVAC/AHU-1/FanStatus,true,,BOOLEAN,false,OK
+PNT-004,AHU-1 Fan Speed,station:|slot:/HVAC/AHU-1/FanSpeed,87.0,%,NUMERIC,true,OK
+PNT-005,AHU-1 Supply Air Temperature,station:|slot:/HVAC/AHU-1/SupplyAirTemp,13.8,°C,NUMERIC,false,OK
+PNT-006,AHU-1 Cooling Valve Position,station:|slot:/HVAC/AHU-1/CoolingValve,98.0,%,NUMERIC,true,OK
+PNT-007,AHU-1 Heating Valve Position,station:|slot:/HVAC/AHU-1/HeatingValve,0.0,%,NUMERIC,true,OK
+PNT-008,AHU-1 Damper Position,station:|slot:/HVAC/AHU-1/DamperPosition,100.0,%,NUMERIC,true,OK
+PNT-009,AHU-2 Zone Temperature,station:|slot:/HVAC/AHU-2/ZoneTemp,22.1,°C,NUMERIC,false,OK
+PNT-010,AHU-2 Zone Temp Setpoint,station:|slot:/HVAC/AHU-2/ZoneTempSP,22.0,°C,NUMERIC,true,OK
+PNT-011,AHU-2 Fan Status,station:|slot:/HVAC/AHU-2/FanStatus,true,,BOOLEAN,false,OK
+PNT-012,AHU-2 Fan Speed,station:|slot:/HVAC/AHU-2/FanSpeed,61.0,%,NUMERIC,true,OK
+PNT-013,AHU-2 Supply Air Temperature,station:|slot:/HVAC/AHU-2/SupplyAirTemp,14.3,°C,NUMERIC,false,OK
+PNT-014,AHU-2 Cooling Valve Position,station:|slot:/HVAC/AHU-2/CoolingValve,60.0,%,NUMERIC,true,OVERRIDDEN
+PNT-015,AHU-2 Damper Position,station:|slot:/HVAC/AHU-2/DamperPosition,75.0,%,NUMERIC,true,OK
+PNT-016,AHU-2 Differential Pressure,station:|slot:/HVAC/AHU-2/DiffPressure,48.5,Pa,NUMERIC,false,OK
+PNT-017,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,31.2,°C,NUMERIC,false,OK
+PNT-018,AHU-3 Zone Temp Setpoint,station:|slot:/HVAC/AHU-3/ZoneTempSP,24.0,°C,NUMERIC,true,OK
+PNT-019,AHU-3 Fan Status,station:|slot:/HVAC/AHU-3/FanStatus,true,,BOOLEAN,false,OK
+PNT-020,AHU-3 Fan Speed,station:|slot:/HVAC/AHU-3/FanSpeed,100.0,%,NUMERIC,true,OK
+PNT-021,AHU-3 Supply Air Temperature,station:|slot:/HVAC/AHU-3/SupplyAirTemp,16.9,°C,NUMERIC,false,OK
+PNT-022,AHU-3 Cooling Valve Position,station:|slot:/HVAC/AHU-3/CoolingValve,100.0,%,NUMERIC,true,OK
+PNT-023,AHU-4 Zone Temperature,station:|slot:/HVAC/AHU-4/ZoneTemp,21.5,°C,NUMERIC,false,OK
+PNT-024,AHU-4 Zone Temp Setpoint,station:|slot:/HVAC/AHU-4/ZoneTempSP,22.0,°C,NUMERIC,true,OK
+PNT-025,AHU-4 Fan Status,station:|slot:/HVAC/AHU-4/FanStatus,false,,BOOLEAN,false,FAULT
+PNT-026,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,NUMERIC,true,FAULT
+PNT-027,AHU-4 Belt Broken,station:|slot:/HVAC/AHU-4/BeltStatus,BROKEN,,ENUM,false,FAULT
+PNT-028,Chiller-1 Enable,station:|slot:/HVAC/Chiller-1/Enable,true,,BOOLEAN,true,OK
+PNT-029,Chiller-1 Operating Mode,station:|slot:/HVAC/Chiller-1/OperatingMode,COOLING,,ENUM,true,OK
+PNT-030,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,198.4,kW,NUMERIC,false,OK
+PNT-031,Chiller-1 Fault Status,station:|slot:/HVAC/Chiller-1/FaultStatus,true,,BOOLEAN,false,FAULT
+PNT-032,Chiller-1 COP,station:|slot:/HVAC/Chiller-1/COP,2.9,,NUMERIC,false,OK
+PNT-033,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.8,°C,NUMERIC,false,OK
+PNT-034,Chilled Water Supply Setpoint,station:|slot:/HVAC/CHW/SupplyTempSP,7.0,°C,NUMERIC,true,OK
+PNT-035,Chilled Water Return Temperature,station:|slot:/HVAC/CHW/ReturnTemp,12.1,°C,NUMERIC,false,OK
+PNT-036,Chilled Water Flow Rate,station:|slot:/HVAC/CHW/FlowRate,8.2,L/s,NUMERIC,false,OK
+PNT-037,CHW Pump-1 Status,station:|slot:/HVAC/CHW/Pump-1/Status,true,,BOOLEAN,true,OK
+PNT-038,CHW Pump-2 Status,station:|slot:/HVAC/CHW/Pump-2/Status,false,,BOOLEAN,true,OK
+PNT-039,Boiler-1 Enable,station:|slot:/HVAC/Boiler-1/Enable,true,,BOOLEAN,true,OK
+PNT-040,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,82.7,°C,NUMERIC,false,OK
+PNT-041,Boiler-1 Water Temp Setpoint,station:|slot:/HVAC/Boiler-1/WaterTempSP,75.0,°C,NUMERIC,true,OK
+PNT-042,Boiler-1 Flue Gas Temperature,station:|slot:/HVAC/Boiler-1/FlueGasTemp,195.3,°C,NUMERIC,false,OK
+PNT-043,Boiler-1 Burner Status,station:|slot:/HVAC/Boiler-1/BurnerStatus,true,,BOOLEAN,false,OK
+PNT-044,Boiler-1 Gas Pressure,station:|slot:/HVAC/Boiler-1/GasPressure,4.2,bar,NUMERIC,false,OK
+PNT-045,Boiler-1 Water Pressure,station:|slot:/HVAC/Boiler-1/WaterPressure,3.8,bar,NUMERIC,false,OK
+PNT-046,Cooling Tower-1 Fan Enable,station:|slot:/HVAC/CT-1/FanEnable,true,,BOOLEAN,true,OK
+PNT-047,Cooling Tower-1 Fan Speed,station:|slot:/HVAC/CT-1/FanSpeed,78.5,%,NUMERIC,true,OK
+PNT-048,Cooling Tower-1 Basin Temperature,station:|slot:/HVAC/CT-1/BasinTemp,28.4,°C,NUMERIC,false,OK
+PNT-049,Condenser Water Return Temperature,station:|slot:/HVAC/CW/ReturnTemp,32.8,°C,NUMERIC,false,OK
+PNT-050,Condenser Water Supply Temperature,station:|slot:/HVAC/CW/SupplyTemp,27.5,°C,NUMERIC,false,OK
+PNT-051,Condenser Pump-1 Status,station:|slot:/HVAC/CW/Pump-1/Status,true,,BOOLEAN,true,OK
+PNT-052,Condenser Pump-1 Current,station:|slot:/HVAC/CW/Pump-1/Current,18.7,A,NUMERIC,false,OK
+PNT-053,FCU-B1-01 Zone Temperature,station:|slot:/HVAC/FCU/B1-01/ZoneTemp,23.2,°C,NUMERIC,false,OK
+PNT-054,FCU-B1-01 Fan Speed,station:|slot:/HVAC/FCU/B1-01/FanSpeed,MED,,ENUM,true,OK
+PNT-055,FCU-B1-02 Zone Temperature,station:|slot:/HVAC/FCU/B1-02/ZoneTemp,24.8,°C,NUMERIC,false,OK
+PNT-056,FCU-B1-02 Fan Speed,station:|slot:/HVAC/FCU/B1-02/FanSpeed,HIGH,,ENUM,true,OK
+PNT-057,VAV-L1-01 Zone Temperature,station:|slot:/HVAC/VAV/L1-01/ZoneTemp,22.8,°C,NUMERIC,false,OK
+PNT-058,VAV-L1-01 Damper Position,station:|slot:/HVAC/VAV/L1-01/DamperPos,45.0,%,NUMERIC,true,OK
+PNT-059,VAV-L1-02 Zone Temperature,station:|slot:/HVAC/VAV/L1-02/ZoneTemp,23.5,°C,NUMERIC,false,OK
+PNT-060,VAV-L1-02 Damper Position,station:|slot:/HVAC/VAV/L1-02/DamperPos,62.0,%,NUMERIC,true,OK
+PNT-061,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,26.8,°C,NUMERIC,false,OK
+PNT-062,Server Room Temp Setpoint,station:|slot:/HVAC/ServerRoom/TempSP,22.0,°C,NUMERIC,true,OK
+PNT-063,Server Room Precision AC Status,station:|slot:/HVAC/ServerRoom/PAC/Status,FAULT,,ENUM,false,FAULT
+PNT-064,Main Incomer Voltage L1,station:|slot:/Electrical/Main/VoltageL1,232.4,V,NUMERIC,false,OK
+PNT-065,Main Incomer Voltage L2,station:|slot:/Electrical/Main/VoltageL2,231.1,V,NUMERIC,false,OK
+PNT-066,Main Incomer Voltage L3,station:|slot:/Electrical/Main/VoltageL3,233.7,V,NUMERIC,false,OK
+PNT-067,Main Incomer Current L1,station:|slot:/Electrical/Main/CurrentL1,312.5,A,NUMERIC,false,OK
+PNT-068,Total Building Power,station:|slot:/Electrical/Main/TotalPower,218.4,kW,NUMERIC,false,OK
+PNT-069,Total Building Energy Today,station:|slot:/Electrical/Main/EnergyToday,1847.2,kWh,NUMERIC,false,OK
+PNT-070,Power Factor,station:|slot:/Electrical/Main/PowerFactor,0.91,,NUMERIC,false,OK
+PNT-071,Panel-A Voltage,station:|slot:/Electrical/Panel-A/Voltage,230.1,V,NUMERIC,false,OK
+PNT-072,Panel-A Total Load,station:|slot:/Electrical/Panel-A/TotalLoad,84.3,kW,NUMERIC,false,OK
+PNT-073,Panel-A CB-3 Status,station:|slot:/Electrical/Panel-A/CB-3/Status,false,,BOOLEAN,false,FAULT
+PNT-074,Panel-B Voltage,station:|slot:/Electrical/Panel-B/Voltage,229.7,V,NUMERIC,false,OK
+PNT-075,Panel-B Total Load,station:|slot:/Electrical/Panel-B/TotalLoad,61.9,kW,NUMERIC,false,OK
+PNT-076,UPS-1 Status,station:|slot:/Electrical/UPS-1/Status,ON_BATTERY,,ENUM,false,OK
+PNT-077,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,38.0,%,NUMERIC,false,OK
+PNT-078,UPS-1 Battery Voltage,station:|slot:/Electrical/UPS-1/BatteryVoltage,47.2,V,NUMERIC,false,OK
+PNT-079,UPS-1 Estimated Runtime,station:|slot:/Electrical/UPS-1/EstRuntime,12.0,min,NUMERIC,false,OK
+PNT-080,Generator-1 Status,station:|slot:/Electrical/Generator-1/Status,STANDBY,,ENUM,false,OK
+PNT-081,Generator-1 Fuel Level,station:|slot:/Electrical/Generator-1/FuelLevel,64.0,%,NUMERIC,false,OK
+PNT-082,Generator-1 Oil Pressure,station:|slot:/Electrical/Generator-1/OilPressure,3.5,bar,NUMERIC,false,OK
+PNT-083,Generator-1 Coolant Temp,station:|slot:/Electrical/Generator-1/CoolantTemp,88.2,°C,NUMERIC,false,OK
+PNT-084,Solar PV Output,station:|slot:/Electrical/Solar/Output,47.3,kW,NUMERIC,false,OK
+PNT-085,Solar PV Daily Generation,station:|slot:/Electrical/Solar/DailyGen,312.8,kWh,NUMERIC,false,OK
+PNT-086,Zone-1 CO2 Level,station:|slot:/IAQ/Zone-1/CO2,620.0,ppm,NUMERIC,false,OK
+PNT-087,Zone-2 CO2 Level,station:|slot:/IAQ/Zone-2/CO2,895.4,ppm,NUMERIC,false,OK
+PNT-088,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1340.0,ppm,NUMERIC,false,OK
+PNT-089,Zone-4 CO2 Level,station:|slot:/IAQ/Zone-4/CO2,710.2,ppm,NUMERIC,false,OK
+PNT-090,Zone-5 CO2 Level,station:|slot:/IAQ/Zone-5/CO2,540.0,ppm,NUMERIC,false,OK
+PNT-091,Zone-1 Humidity,station:|slot:/IAQ/Zone-1/Humidity,55.2,%,NUMERIC,false,OK
+PNT-092,Zone-2 Humidity,station:|slot:/IAQ/Zone-2/Humidity,62.7,%,NUMERIC,false,OK
+PNT-093,Zone-3 Humidity,station:|slot:/IAQ/Zone-3/Humidity,58.1,%,NUMERIC,false,OK
+PNT-094,Zone-5 Humidity,station:|slot:/IAQ/Zone-5/Humidity,82.3,%,NUMERIC,false,OK
+PNT-095,Zone-1 Occupancy,station:|slot:/IAQ/Zone-1/Occupancy,OCCUPIED,,ENUM,false,OK
+PNT-096,Zone-2 Occupancy,station:|slot:/IAQ/Zone-2/Occupancy,OCCUPIED,,ENUM,false,OK
+PNT-097,Zone-3 Occupancy,station:|slot:/IAQ/Zone-3/Occupancy,UNOCCUPIED,,ENUM,false,OK
+PNT-098,Zone-4 Occupancy,station:|slot:/IAQ/Zone-4/Occupancy,OCCUPIED,,ENUM,false,OK
+PNT-099,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,44.1,°C,NUMERIC,false,OK
+PNT-100,DHW Temp Setpoint,station:|slot:/Plumbing/DHW/TempSP,60.0,°C,NUMERIC,true,OK
+PNT-101,DHW Circulation Pump Status,station:|slot:/Plumbing/DHW/CircPump/Status,true,,BOOLEAN,true,OK
+PNT-102,Cold Water Storage Level,station:|slot:/Plumbing/CWS/TankLevel,78.0,%,NUMERIC,false,OK
+PNT-103,Water Leak Sensor B2,station:|slot:/Plumbing/B2/LeakSensor,WET,,ENUM,false,OK
+PNT-104,Water Meter Reading,station:|slot:/Plumbing/Main/MeterReading,48291.4,m3,NUMERIC,false,OK
+PNT-105,Fire Panel Zone-1 Status,station:|slot:/Fire/Zone-1/Status,NORMAL,,ENUM,false,OK
+PNT-106,Fire Panel Zone-2 Status,station:|slot:/Fire/Zone-2/Status,ALARM,,ENUM,false,OK
+PNT-107,Fire Panel Zone-3 Status,station:|slot:/Fire/Zone-3/Status,NORMAL,,ENUM,false,OK
+PNT-108,Smoke Detector Zone-2 Value,station:|slot:/Fire/Zone-2/SmokeDetector,87.0,%,NUMERIC,false,OK
+PNT-109,Sprinkler Zone-3 Status,station:|slot:/Fire/Floor-3/SprinklerStatus,ACTIVE,,ENUM,false,OK
+PNT-110,Fire Suppression System Status,station:|slot:/Fire/Main/SuppressStatus,READY,,ENUM,false,OK
+PNT-111,Zone-1 Lighting Level,station:|slot:/Lighting/Zone-1/Level,80.0,%,NUMERIC,true,OK
+PNT-112,Zone-2 Lighting Level,station:|slot:/Lighting/Zone-2/Level,0.0,%,NUMERIC,true,DISABLED
+PNT-113,Zone-3 Lighting Level,station:|slot:/Lighting/Zone-3/Level,100.0,%,NUMERIC,true,OK
+PNT-114,Zone-4 Lighting Level,station:|slot:/Lighting/Zone-4/Level,65.0,%,NUMERIC,true,OK
+PNT-115,Carpark Lighting Status,station:|slot:/Lighting/Carpark/Status,AUTO,,ENUM,true,OK
+PNT-116,Emergency Light Zone-1,station:|slot:/Lighting/Zone-1/EmergencyLight,FAULT,,ENUM,false,FAULT
+PNT-117,Server Room Door Status,station:|slot:/Security/ServerRoom/Door,OPEN,,ENUM,false,OK
+PNT-118,Server Room Access Mode,station:|slot:/Security/ServerRoom/AccessMode,CARD_ONLY,,ENUM,true,OK
+PNT-119,Main Entrance Door Status,station:|slot:/Security/MainEntrance/Door,CLOSED,,ENUM,false,OK
+PNT-120,BMS System Status Message,station:|slot:/System/StatusMessage,10 active alarms require attention,,STRING,true,OK
