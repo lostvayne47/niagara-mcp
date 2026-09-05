@@ -4,3 +4,23 @@ HST-002,AHU-2 Supply Air Temperature,station:|slot:/HVAC/AHU-2/SupplyAirTemp,14.
 HST-003,Chiller Power Consumption,station:|slot:/HVAC/Chiller-1/PowerConsumption,145.7,kWh,2026-09-05T12:00:00,3600,OK
 HST-004,Panel-A Main Voltage,station:|slot:/Electrical/Panel-A/MainVoltage,230.1,V,2026-09-05T11:55:00,60,UNCERTAIN
 HST-005,Zone 2 CO2 Level,station:|slot:/IAQ/Zone-2/CO2Level,,ppm,2026-09-05T11:50:00,300,BAD
+HST-006,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,26.8,°C,2026-09-05T12:00:00,300,OK
+HST-007,AHU-4 Zone Temperature,station:|slot:/HVAC/AHU-4/ZoneTemp,21.2,°C,2026-09-05T12:00:00,300,OK
+HST-008,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,72.4,°C,2026-09-05T12:00:00,60,OK
+HST-009,Chilled Water Return Temperature,station:|slot:/HVAC/CHW/ReturnTemp,12.1,°C,2026-09-05T12:00:00,300,OK
+HST-010,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.8,°C,2026-09-05T12:00:00,300,OK
+HST-011,Cooling Tower Fan Speed,station:|slot:/HVAC/CT-1/FanSpeed,78.5,%,2026-09-05T12:00:00,300,OK
+HST-012,Total Building Power,station:|slot:/Electrical/Main/TotalPower,842.3,kW,2026-09-05T12:00:00,900,OK
+HST-013,Panel-B Main Voltage,station:|slot:/Electrical/Panel-B/MainVoltage,229.7,V,2026-09-05T12:00:00,60,OK
+HST-014,UPS-1 Battery Voltage,station:|slot:/Electrical/UPS-1/BatteryVoltage,47.2,V,2026-09-05T12:00:00,300,OK
+HST-015,Zone 1 CO2 Level,station:|slot:/IAQ/Zone-1/CO2Level,620.0,ppm,2026-09-05T12:00:00,300,OK
+HST-016,Zone 3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2Level,1180.5,ppm,2026-09-05T12:00:00,300,OK
+HST-017,Zone 1 Humidity,station:|slot:/IAQ/Zone-1/Humidity,55.2,%,2026-09-05T12:00:00,300,OK
+HST-018,Zone 5 Humidity,station:|slot:/IAQ/Zone-5/Humidity,78.9,%,2026-09-05T12:00:00,300,UNCERTAIN
+HST-019,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,48.3,°C,2026-09-05T12:00:00,600,OK
+HST-020,AHU-1 Fan Speed,station:|slot:/HVAC/AHU-1/FanSpeed,65.0,%,2026-09-05T12:00:00,300,OK
+HST-021,AHU-2 Fan Speed,station:|slot:/HVAC/AHU-2/FanSpeed,72.5,%,2026-09-05T12:00:00,300,OK
+HST-022,Condenser Water Return Temperature,station:|slot:/HVAC/CW/ReturnTemp,29.6,°C,2026-09-05T12:00:00,300,OK
+HST-023,Generator-1 Fuel Level,station:|slot:/Electrical/Generator-1/FuelLevel,64.0,%,2026-09-05T12:00:00,3600,OK
+HST-024,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,,°C,2026-09-05T11:45:00,60,BAD
+HST-025,Zone 4 CO2 Level,station:|slot:/IAQ/Zone-4/CO2Level,710.2,ppm,2026-09-05T12:00:00,300,OK
