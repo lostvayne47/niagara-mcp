@@ -70,21 +70,24 @@
 
 ---
 
-### SCENE 6 — Three Personas, Fast Cut (~45 sec)
+### SCENE 6 — Same Data, Any Audience (~45 sec)
 **What to show:**  
-Three back-to-back queries, each in a new conversation:
+Three back-to-back queries, each in a **new conversation**. The key is the output format changes every time:
 
-**Query 1 (Technician):**
-> `Which points are faulted or overridden right now? Give me the paths so I can investigate.`
-- Let it respond → hold 4 sec → cut
+**Query 1 (Technician — expects a tight table):**
+> `Give me a table of all faulted or overridden points — ID, name, status, and path. Nothing else.`
+- Claude returns a clean markdown table — **hold on the table for 4 sec** → cut
 
-**Query 2 (Energy Manager):**
-> `Was total building power consumption higher than normal last night? Flag any inefficiencies.`
-- Let it respond → hold 4 sec → cut
+**Query 2 (Shift Manager — expects a quick report):**
+> `Write a 5-bullet shift handover report for the building. Flag the top issues only.`
+- Claude returns 5 crisp bullet points — **hold for 4 sec** → cut
 
-**Query 3 (Executive):**
-> `In one paragraph — what happened in this building today and should I be concerned?`
-- Let it respond → hold 5 sec → cut
+**Query 3 (Executive — visual bar chart):**
+> `Fetch all the current point values and plot them as a bar chart, categorised by system — HVAC, Electrical, Plumbing, and so on.`
+- Claude fetches all points, groups them by system category, and renders a **categorised bar chart**
+- **Hold for 6–8 seconds** — this is the visual showstopper of the scene, let it breathe
+
+> 💡 **Tip:** The magic of this scene is watching the *same underlying data* produce three completely different outputs for three different people — table, report, infographic — without any reconfiguration.
 
 ---
 
@@ -142,9 +145,9 @@ Here is where it goes beyond any dashboard. A dashboard can only show patterns i
 
 ---
 
-**[SCENE 6 — Three Personas]**
+**[SCENE 6 — Same Data, Any Audience]**
 
-Same system. Same data. Different questions. A technician gets precise fault paths for investigation. An energy manager gets a peak versus off-peak analysis with anomaly callouts. And an executive gets one plain-English paragraph. No one needed to understand how the system works. They just needed to ask.
+Same building. Same data. Three completely different people. A technician asks for a fault table — and gets exactly that. A shift manager asks for a five-bullet handover report — and gets exactly that. And for the full picture — Claude fetches every live point in the building, groups them by system, and plots them as a categorised bar chart. HVAC, Electrical, Plumbing — all their current values, visualised in one view. No dashboard was built for this. No developer was called. Just one question.
 
 ---
 
