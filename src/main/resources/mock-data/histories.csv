@@ -1,89 +1,331 @@
 id,displayName,sourcePath,value,unit,timestamp,interval,quality
-HST-001,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,23.6,°C,2026-09-05T11:25:00,300,OK
-HST-002,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,24.5,°C,2026-09-05T11:30:00,300,OK
-HST-003,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,25.3,°C,2026-09-05T11:35:00,300,OK
-HST-004,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,26.4,°C,2026-09-05T11:40:00,300,OK
-HST-005,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,27.2,°C,2026-09-05T11:45:00,300,OK
-HST-006,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,28.1,°C,2026-09-05T11:50:00,300,OK
-HST-007,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,28.9,°C,2026-09-05T11:55:00,300,OK
-HST-008,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,29.4,°C,2026-09-05T12:00:00,300,OK
-HST-009,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,24.8,°C,2026-09-05T11:25:00,300,OK
-HST-010,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,26.1,°C,2026-09-05T11:30:00,300,OK
-HST-011,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,27.4,°C,2026-09-05T11:35:00,300,OK
-HST-012,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,28.6,°C,2026-09-05T11:40:00,300,OK
-HST-013,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,29.5,°C,2026-09-05T11:45:00,300,OK
-HST-014,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,30.2,°C,2026-09-05T11:50:00,300,OK
-HST-015,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,30.8,°C,2026-09-05T11:55:00,300,OK
-HST-016,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,31.2,°C,2026-09-05T12:00:00,300,OK
-HST-017,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,71.5,%,2026-09-05T10:30:00,300,OK
-HST-018,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,70.2,%,2026-09-05T10:35:00,300,OK
-HST-019,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,68.8,%,2026-09-05T10:40:00,300,OK
-HST-020,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,52.3,%,2026-09-05T10:45:00,300,OK
-HST-021,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,24.1,%,2026-09-05T10:50:00,300,OK
-HST-022,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T10:55:00,300,OK
-HST-023,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T11:00:00,300,OK
-HST-024,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T12:00:00,300,OK
-HST-025,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,142.1,kW,2026-09-05T04:00:00,3600,OK
-HST-026,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,145.8,kW,2026-09-05T05:00:00,3600,OK
-HST-027,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,151.2,kW,2026-09-05T06:00:00,3600,OK
-HST-028,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,158.7,kW,2026-09-05T07:00:00,3600,OK
-HST-029,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,165.4,kW,2026-09-05T08:00:00,3600,OK
-HST-030,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,175.8,kW,2026-09-05T09:00:00,3600,OK
-HST-031,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,188.2,kW,2026-09-05T10:00:00,3600,OK
-HST-032,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,198.4,kW,2026-09-05T12:00:00,3600,OK
-HST-033,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.0,°C,2026-09-05T11:25:00,300,OK
-HST-034,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.1,°C,2026-09-05T11:30:00,300,OK
-HST-035,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.2,°C,2026-09-05T11:35:00,300,OK
-HST-036,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.3,°C,2026-09-05T11:40:00,300,OK
-HST-037,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.4,°C,2026-09-05T11:45:00,300,OK
-HST-038,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.5,°C,2026-09-05T11:50:00,300,OK
-HST-039,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.7,°C,2026-09-05T11:55:00,300,OK
-HST-040,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.8,°C,2026-09-05T12:00:00,300,OK
-HST-041,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,75.2,°C,2026-09-05T11:53:00,60,OK
-HST-042,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,76.8,°C,2026-09-05T11:54:00,60,OK
-HST-043,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,78.4,°C,2026-09-05T11:55:00,60,OK
-HST-044,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,79.7,°C,2026-09-05T11:56:00,60,OK
-HST-045,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,80.9,°C,2026-09-05T11:57:00,60,OK
-HST-046,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,81.8,°C,2026-09-05T11:58:00,60,OK
-HST-047,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,82.3,°C,2026-09-05T11:59:00,60,OK
-HST-048,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,82.7,°C,2026-09-05T12:00:00,60,OK
-HST-049,Total Building Power,station:|slot:/Electrical/Main/TotalPower,195.2,kW,2026-09-05T09:45:00,900,OK
-HST-050,Total Building Power,station:|slot:/Electrical/Main/TotalPower,201.8,kW,2026-09-05T10:00:00,900,OK
-HST-051,Total Building Power,station:|slot:/Electrical/Main/TotalPower,207.4,kW,2026-09-05T10:15:00,900,OK
-HST-052,Total Building Power,station:|slot:/Electrical/Main/TotalPower,210.1,kW,2026-09-05T10:30:00,900,OK
-HST-053,Total Building Power,station:|slot:/Electrical/Main/TotalPower,213.8,kW,2026-09-05T10:45:00,900,OK
-HST-054,Total Building Power,station:|slot:/Electrical/Main/TotalPower,215.6,kW,2026-09-05T11:00:00,900,OK
-HST-055,Total Building Power,station:|slot:/Electrical/Main/TotalPower,217.0,kW,2026-09-05T11:15:00,900,OK
-HST-056,Total Building Power,station:|slot:/Electrical/Main/TotalPower,218.4,kW,2026-09-05T12:00:00,900,OK
-HST-057,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,51.0,%,2026-09-05T11:25:00,300,OK
-HST-058,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,49.2,%,2026-09-05T11:30:00,300,OK
-HST-059,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,47.5,%,2026-09-05T11:35:00,300,OK
-HST-060,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,45.8,%,2026-09-05T11:40:00,300,OK
-HST-061,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,43.9,%,2026-09-05T11:45:00,300,OK
-HST-062,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,42.1,%,2026-09-05T11:50:00,300,OK
-HST-063,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,40.0,%,2026-09-05T11:55:00,300,OK
-HST-064,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,38.0,%,2026-09-05T12:00:00,300,OK
-HST-065,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,820.0,ppm,2026-09-05T11:25:00,300,OK
-HST-066,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,920.0,ppm,2026-09-05T11:30:00,300,OK
-HST-067,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1020.0,ppm,2026-09-05T11:35:00,300,OK
-HST-068,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1100.0,ppm,2026-09-05T11:40:00,300,OK
-HST-069,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1180.0,ppm,2026-09-05T11:45:00,300,OK
-HST-070,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1240.0,ppm,2026-09-05T11:50:00,300,OK
-HST-071,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1300.0,ppm,2026-09-05T11:55:00,300,OK
-HST-072,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1340.0,ppm,2026-09-05T12:00:00,300,OK
-HST-073,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,58.2,°C,2026-09-05T10:30:00,600,OK
-HST-074,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,56.8,°C,2026-09-05T10:40:00,600,OK
-HST-075,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,54.9,°C,2026-09-05T10:50:00,600,OK
-HST-076,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,52.3,°C,2026-09-05T11:00:00,600,OK
-HST-077,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,50.4,°C,2026-09-05T11:10:00,600,OK
-HST-078,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,48.1,°C,2026-09-05T11:20:00,600,OK
-HST-079,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,46.2,°C,2026-09-05T11:40:00,600,OK
-HST-080,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,44.1,°C,2026-09-05T12:00:00,600,OK
-HST-081,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,22.4,°C,2026-09-05T11:53:00,60,OK
-HST-082,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,22.8,°C,2026-09-05T11:54:00,60,OK
-HST-083,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,23.5,°C,2026-09-05T11:55:00,60,OK
-HST-084,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,24.1,°C,2026-09-05T11:56:00,60,OK
-HST-085,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,24.8,°C,2026-09-05T11:57:00,60,OK
-HST-086,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,25.4,°C,2026-09-05T11:58:00,60,OK
-HST-087,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,26.1,°C,2026-09-05T11:59:00,60,OK
-HST-088,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,26.8,°C,2026-09-05T12:00:00,60,OK
+HST-001,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,22.1,°C,2026-09-05T08:55:00,300,OK
+HST-002,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,22.5,°C,2026-09-05T09:00:00,300,OK
+HST-003,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,22.9,°C,2026-09-05T09:05:00,300,OK
+HST-004,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,23.3,°C,2026-09-05T09:10:00,300,OK
+HST-005,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,23.6,°C,2026-09-05T09:15:00,300,OK
+HST-006,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,24.0,°C,2026-09-05T09:20:00,300,OK
+HST-007,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,24.3,°C,2026-09-05T09:25:00,300,OK
+HST-008,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,24.5,°C,2026-09-05T09:30:00,300,OK
+HST-009,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,24.9,°C,2026-09-05T09:35:00,300,OK
+HST-010,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,25.2,°C,2026-09-05T09:40:00,300,OK
+HST-011,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,25.6,°C,2026-09-05T09:45:00,300,OK
+HST-012,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,26.0,°C,2026-09-05T09:50:00,300,OK
+HST-013,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,26.3,°C,2026-09-05T09:55:00,300,OK
+HST-014,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,26.7,°C,2026-09-05T10:00:00,300,OK
+HST-015,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,27.0,°C,2026-09-05T10:05:00,300,OK
+HST-016,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,27.3,°C,2026-09-05T10:10:00,300,OK
+HST-017,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,27.6,°C,2026-09-05T10:15:00,300,OK
+HST-018,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,27.9,°C,2026-09-05T10:20:00,300,OK
+HST-019,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,28.2,°C,2026-09-05T10:25:00,300,OK
+HST-020,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,28.4,°C,2026-09-05T10:30:00,300,OK
+HST-021,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,28.6,°C,2026-09-05T10:35:00,300,OK
+HST-022,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,28.8,°C,2026-09-05T10:40:00,300,OK
+HST-023,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,28.9,°C,2026-09-05T10:45:00,300,OK
+HST-024,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,29.0,°C,2026-09-05T10:50:00,300,OK
+HST-025,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,29.1,°C,2026-09-05T10:55:00,300,OK
+HST-026,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,29.2,°C,2026-09-05T11:00:00,300,OK
+HST-027,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,29.3,°C,2026-09-05T11:05:00,300,OK
+HST-028,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,29.3,°C,2026-09-05T11:10:00,300,OK
+HST-029,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,29.4,°C,2026-09-05T11:15:00,300,OK
+HST-030,AHU-1 Zone Temperature,station:|slot:/HVAC/AHU-1/ZoneTemp,29.4,°C,2026-09-05T11:20:00,300,OK
+HST-031,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,23.0,°C,2026-09-05T08:55:00,300,OK
+HST-032,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,23.5,°C,2026-09-05T09:00:00,300,OK
+HST-033,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,24.0,°C,2026-09-05T09:05:00,300,OK
+HST-034,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,24.6,°C,2026-09-05T09:10:00,300,OK
+HST-035,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,25.1,°C,2026-09-05T09:15:00,300,OK
+HST-036,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,25.7,°C,2026-09-05T09:20:00,300,OK
+HST-037,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,26.2,°C,2026-09-05T09:25:00,300,OK
+HST-038,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,26.7,°C,2026-09-05T09:30:00,300,OK
+HST-039,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,27.1,°C,2026-09-05T09:35:00,300,OK
+HST-040,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,27.5,°C,2026-09-05T09:40:00,300,OK
+HST-041,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,27.9,°C,2026-09-05T09:45:00,300,OK
+HST-042,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,28.3,°C,2026-09-05T09:50:00,300,OK
+HST-043,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,28.7,°C,2026-09-05T09:55:00,300,OK
+HST-044,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,29.1,°C,2026-09-05T10:00:00,300,OK
+HST-045,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,29.4,°C,2026-09-05T10:05:00,300,OK
+HST-046,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,29.7,°C,2026-09-05T10:10:00,300,OK
+HST-047,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,29.9,°C,2026-09-05T10:15:00,300,OK
+HST-048,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,30.2,°C,2026-09-05T10:20:00,300,OK
+HST-049,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,30.4,°C,2026-09-05T10:25:00,300,OK
+HST-050,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,30.5,°C,2026-09-05T10:30:00,300,OK
+HST-051,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,30.7,°C,2026-09-05T10:35:00,300,OK
+HST-052,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,30.8,°C,2026-09-05T10:40:00,300,OK
+HST-053,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,30.9,°C,2026-09-05T10:45:00,300,OK
+HST-054,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,31.0,°C,2026-09-05T10:50:00,300,OK
+HST-055,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,31.1,°C,2026-09-05T10:55:00,300,OK
+HST-056,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,31.1,°C,2026-09-05T11:00:00,300,OK
+HST-057,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,31.2,°C,2026-09-05T11:05:00,300,OK
+HST-058,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,31.2,°C,2026-09-05T11:10:00,300,OK
+HST-059,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,31.2,°C,2026-09-05T11:15:00,300,OK
+HST-060,AHU-3 Zone Temperature,station:|slot:/HVAC/AHU-3/ZoneTemp,31.2,°C,2026-09-05T11:20:00,300,OK
+HST-061,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,83.5,%,2026-09-05T08:30:00,300,OK
+HST-062,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,81.2,%,2026-09-05T08:35:00,300,OK
+HST-063,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,79.6,%,2026-09-05T08:40:00,300,OK
+HST-064,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,78.0,%,2026-09-05T08:45:00,300,OK
+HST-065,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,76.4,%,2026-09-05T08:50:00,300,OK
+HST-066,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,74.9,%,2026-09-05T08:55:00,300,OK
+HST-067,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,73.8,%,2026-09-05T09:00:00,300,OK
+HST-068,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,72.6,%,2026-09-05T09:05:00,300,OK
+HST-069,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,71.9,%,2026-09-05T09:10:00,300,OK
+HST-070,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,71.5,%,2026-09-05T09:15:00,300,OK
+HST-071,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,70.8,%,2026-09-05T09:20:00,300,OK
+HST-072,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,70.2,%,2026-09-05T09:25:00,300,OK
+HST-073,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,69.4,%,2026-09-05T09:30:00,300,OK
+HST-074,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,68.8,%,2026-09-05T09:35:00,300,OK
+HST-075,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,66.1,%,2026-09-05T09:40:00,300,OK
+HST-076,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,60.3,%,2026-09-05T09:45:00,300,OK
+HST-077,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,52.3,%,2026-09-05T09:50:00,300,OK
+HST-078,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,41.7,%,2026-09-05T09:55:00,300,OK
+HST-079,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,30.2,%,2026-09-05T10:00:00,300,OK
+HST-080,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,24.1,%,2026-09-05T10:05:00,300,OK
+HST-081,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,15.6,%,2026-09-05T10:10:00,300,OK
+HST-082,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,8.3,%,2026-09-05T10:15:00,300,OK
+HST-083,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,2.1,%,2026-09-05T10:20:00,300,OK
+HST-084,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T10:25:00,300,OK
+HST-085,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T10:30:00,300,FAULT
+HST-086,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T10:35:00,300,FAULT
+HST-087,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T10:40:00,300,FAULT
+HST-088,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T10:45:00,300,FAULT
+HST-089,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T10:50:00,300,FAULT
+HST-090,AHU-4 Fan Speed,station:|slot:/HVAC/AHU-4/FanSpeed,0.0,%,2026-09-05T10:55:00,300,FAULT
+HST-091,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,118.4,kW,2026-09-05T00:00:00,3600,OK
+HST-092,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,115.2,kW,2026-09-05T01:00:00,3600,OK
+HST-093,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,112.9,kW,2026-09-05T02:00:00,3600,OK
+HST-094,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,111.0,kW,2026-09-05T03:00:00,3600,OK
+HST-095,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,118.3,kW,2026-09-05T04:00:00,3600,OK
+HST-096,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,128.7,kW,2026-09-05T05:00:00,3600,OK
+HST-097,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,138.4,kW,2026-09-05T06:00:00,3600,OK
+HST-098,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,145.8,kW,2026-09-05T07:00:00,3600,OK
+HST-099,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,153.2,kW,2026-09-05T08:00:00,3600,OK
+HST-100,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,158.7,kW,2026-09-05T09:00:00,3600,OK
+HST-101,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,163.4,kW,2026-09-05T10:00:00,3600,OK
+HST-102,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,168.1,kW,2026-09-05T11:00:00,3600,OK
+HST-103,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,171.6,kW,2026-09-05T12:00:00,3600,OK
+HST-104,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,175.8,kW,2026-09-05T13:00:00,3600,OK
+HST-105,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,180.3,kW,2026-09-05T14:00:00,3600,OK
+HST-106,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,184.7,kW,2026-09-05T15:00:00,3600,OK
+HST-107,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,188.2,kW,2026-09-05T16:00:00,3600,OK
+HST-108,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,191.5,kW,2026-09-05T17:00:00,3600,OK
+HST-109,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,194.1,kW,2026-09-05T18:00:00,3600,OK
+HST-110,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,196.3,kW,2026-09-05T19:00:00,3600,OK
+HST-111,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,197.8,kW,2026-09-05T20:00:00,3600,OK
+HST-112,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,198.4,kW,2026-09-05T21:00:00,3600,OK
+HST-113,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,197.2,kW,2026-09-05T22:00:00,3600,OK
+HST-114,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,194.6,kW,2026-09-05T23:00:00,3600,OK
+HST-115,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,189.3,kW,2026-09-06T00:00:00,3600,OK
+HST-116,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,183.1,kW,2026-09-06T01:00:00,3600,OK
+HST-117,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,175.4,kW,2026-09-06T02:00:00,3600,OK
+HST-118,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,167.0,kW,2026-09-06T03:00:00,3600,OK
+HST-119,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,158.9,kW,2026-09-06T04:00:00,3600,OK
+HST-120,Chiller-1 Power Consumption,station:|slot:/HVAC/Chiller-1/Power,151.2,kW,2026-09-06T05:00:00,3600,OK
+HST-121,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,5.1,°C,2026-09-05T08:55:00,300,OK
+HST-122,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,5.2,°C,2026-09-05T09:00:00,300,OK
+HST-123,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,5.3,°C,2026-09-05T09:05:00,300,OK
+HST-124,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,5.4,°C,2026-09-05T09:10:00,300,OK
+HST-125,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,5.5,°C,2026-09-05T09:15:00,300,OK
+HST-126,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,5.6,°C,2026-09-05T09:20:00,300,OK
+HST-127,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,5.7,°C,2026-09-05T09:25:00,300,OK
+HST-128,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,5.8,°C,2026-09-05T09:30:00,300,OK
+HST-129,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,5.9,°C,2026-09-05T09:35:00,300,OK
+HST-130,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.0,°C,2026-09-05T09:40:00,300,OK
+HST-131,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.0,°C,2026-09-05T09:45:00,300,OK
+HST-132,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.1,°C,2026-09-05T09:50:00,300,OK
+HST-133,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.1,°C,2026-09-05T09:55:00,300,OK
+HST-134,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.2,°C,2026-09-05T10:00:00,300,OK
+HST-135,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.2,°C,2026-09-05T10:05:00,300,OK
+HST-136,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.3,°C,2026-09-05T10:10:00,300,OK
+HST-137,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.3,°C,2026-09-05T10:15:00,300,OK
+HST-138,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.4,°C,2026-09-05T10:20:00,300,OK
+HST-139,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.4,°C,2026-09-05T10:25:00,300,OK
+HST-140,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.5,°C,2026-09-05T10:30:00,300,OK
+HST-141,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.5,°C,2026-09-05T10:35:00,300,OK
+HST-142,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.6,°C,2026-09-05T10:40:00,300,OK
+HST-143,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.7,°C,2026-09-05T10:45:00,300,OK
+HST-144,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.7,°C,2026-09-05T10:50:00,300,OK
+HST-145,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.8,°C,2026-09-05T10:55:00,300,OK
+HST-146,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.8,°C,2026-09-05T11:00:00,300,OK
+HST-147,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.8,°C,2026-09-05T11:05:00,300,OK
+HST-148,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.8,°C,2026-09-05T11:10:00,300,OK
+HST-149,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.8,°C,2026-09-05T11:15:00,300,OK
+HST-150,Chilled Water Supply Temperature,station:|slot:/HVAC/CHW/SupplyTemp,6.8,°C,2026-09-05T11:20:00,300,OK
+HST-151,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,62.4,°C,2026-09-05T11:00:00,60,OK
+HST-152,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,63.1,°C,2026-09-05T11:01:00,60,OK
+HST-153,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,63.8,°C,2026-09-05T11:02:00,60,OK
+HST-154,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,64.7,°C,2026-09-05T11:03:00,60,OK
+HST-155,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,65.5,°C,2026-09-05T11:04:00,60,OK
+HST-156,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,66.4,°C,2026-09-05T11:05:00,60,OK
+HST-157,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,67.3,°C,2026-09-05T11:06:00,60,OK
+HST-158,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,68.2,°C,2026-09-05T11:07:00,60,OK
+HST-159,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,69.0,°C,2026-09-05T11:08:00,60,OK
+HST-160,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,69.8,°C,2026-09-05T11:09:00,60,OK
+HST-161,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,70.5,°C,2026-09-05T11:10:00,60,OK
+HST-162,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,71.3,°C,2026-09-05T11:11:00,60,OK
+HST-163,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,72.0,°C,2026-09-05T11:12:00,60,OK
+HST-164,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,72.7,°C,2026-09-05T11:13:00,60,OK
+HST-165,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,73.4,°C,2026-09-05T11:14:00,60,OK
+HST-166,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,74.1,°C,2026-09-05T11:15:00,60,OK
+HST-167,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,74.7,°C,2026-09-05T11:16:00,60,OK
+HST-168,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,75.2,°C,2026-09-05T11:17:00,60,OK
+HST-169,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,75.8,°C,2026-09-05T11:18:00,60,OK
+HST-170,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,76.4,°C,2026-09-05T11:19:00,60,OK
+HST-171,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,76.9,°C,2026-09-05T11:20:00,60,OK
+HST-172,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,77.5,°C,2026-09-05T11:21:00,60,OK
+HST-173,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,78.1,°C,2026-09-05T11:22:00,60,OK
+HST-174,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,78.7,°C,2026-09-05T11:23:00,60,OK
+HST-175,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,79.3,°C,2026-09-05T11:24:00,60,OK
+HST-176,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,79.8,°C,2026-09-05T11:25:00,60,OK
+HST-177,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,80.4,°C,2026-09-05T11:26:00,60,OK
+HST-178,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,80.9,°C,2026-09-05T11:27:00,60,OK
+HST-179,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,81.5,°C,2026-09-05T11:28:00,60,OK
+HST-180,Boiler-1 Water Temperature,station:|slot:/HVAC/Boiler-1/WaterTemp,82.7,°C,2026-09-05T11:29:00,60,OK
+HST-181,Total Building Power,station:|slot:/Electrical/Main/TotalPower,168.3,kW,2026-09-05T07:30:00,900,OK
+HST-182,Total Building Power,station:|slot:/Electrical/Main/TotalPower,175.1,kW,2026-09-05T07:45:00,900,OK
+HST-183,Total Building Power,station:|slot:/Electrical/Main/TotalPower,181.4,kW,2026-09-05T08:00:00,900,OK
+HST-184,Total Building Power,station:|slot:/Electrical/Main/TotalPower,187.2,kW,2026-09-05T08:15:00,900,OK
+HST-185,Total Building Power,station:|slot:/Electrical/Main/TotalPower,191.6,kW,2026-09-05T08:30:00,900,OK
+HST-186,Total Building Power,station:|slot:/Electrical/Main/TotalPower,195.2,kW,2026-09-05T08:45:00,900,OK
+HST-187,Total Building Power,station:|slot:/Electrical/Main/TotalPower,198.3,kW,2026-09-05T09:00:00,900,OK
+HST-188,Total Building Power,station:|slot:/Electrical/Main/TotalPower,201.8,kW,2026-09-05T09:15:00,900,OK
+HST-189,Total Building Power,station:|slot:/Electrical/Main/TotalPower,204.1,kW,2026-09-05T09:30:00,900,OK
+HST-190,Total Building Power,station:|slot:/Electrical/Main/TotalPower,206.5,kW,2026-09-05T09:45:00,900,OK
+HST-191,Total Building Power,station:|slot:/Electrical/Main/TotalPower,207.4,kW,2026-09-05T10:00:00,900,OK
+HST-192,Total Building Power,station:|slot:/Electrical/Main/TotalPower,208.6,kW,2026-09-05T10:15:00,900,OK
+HST-193,Total Building Power,station:|slot:/Electrical/Main/TotalPower,209.3,kW,2026-09-05T10:30:00,900,OK
+HST-194,Total Building Power,station:|slot:/Electrical/Main/TotalPower,210.1,kW,2026-09-05T10:45:00,900,OK
+HST-195,Total Building Power,station:|slot:/Electrical/Main/TotalPower,211.4,kW,2026-09-05T11:00:00,900,OK
+HST-196,Total Building Power,station:|slot:/Electrical/Main/TotalPower,212.5,kW,2026-09-05T11:15:00,900,OK
+HST-197,Total Building Power,station:|slot:/Electrical/Main/TotalPower,213.8,kW,2026-09-05T11:30:00,900,OK
+HST-198,Total Building Power,station:|slot:/Electrical/Main/TotalPower,214.6,kW,2026-09-05T11:45:00,900,OK
+HST-199,Total Building Power,station:|slot:/Electrical/Main/TotalPower,215.6,kW,2026-09-05T12:00:00,900,OK
+HST-200,Total Building Power,station:|slot:/Electrical/Main/TotalPower,216.1,kW,2026-09-05T12:15:00,900,OK
+HST-201,Total Building Power,station:|slot:/Electrical/Main/TotalPower,216.5,kW,2026-09-05T12:30:00,900,OK
+HST-202,Total Building Power,station:|slot:/Electrical/Main/TotalPower,217.0,kW,2026-09-05T12:45:00,900,OK
+HST-203,Total Building Power,station:|slot:/Electrical/Main/TotalPower,217.4,kW,2026-09-05T13:00:00,900,OK
+HST-204,Total Building Power,station:|slot:/Electrical/Main/TotalPower,217.8,kW,2026-09-05T13:15:00,900,OK
+HST-205,Total Building Power,station:|slot:/Electrical/Main/TotalPower,218.1,kW,2026-09-05T13:30:00,900,OK
+HST-206,Total Building Power,station:|slot:/Electrical/Main/TotalPower,218.3,kW,2026-09-05T13:45:00,900,OK
+HST-207,Total Building Power,station:|slot:/Electrical/Main/TotalPower,218.4,kW,2026-09-05T14:00:00,900,OK
+HST-208,Total Building Power,station:|slot:/Electrical/Main/TotalPower,218.4,kW,2026-09-05T14:15:00,900,OK
+HST-209,Total Building Power,station:|slot:/Electrical/Main/TotalPower,218.4,kW,2026-09-05T14:30:00,900,OK
+HST-210,Total Building Power,station:|slot:/Electrical/Main/TotalPower,218.4,kW,2026-09-05T14:45:00,900,OK
+HST-211,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,98.0,%,2026-09-05T08:55:00,300,OK
+HST-212,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,97.1,%,2026-09-05T09:00:00,300,OK
+HST-213,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,95.8,%,2026-09-05T09:05:00,300,OK
+HST-214,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,93.9,%,2026-09-05T09:10:00,300,OK
+HST-215,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,91.5,%,2026-09-05T09:15:00,300,OK
+HST-216,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,89.3,%,2026-09-05T09:20:00,300,OK
+HST-217,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,87.0,%,2026-09-05T09:25:00,300,OK
+HST-218,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,84.6,%,2026-09-05T09:30:00,300,OK
+HST-219,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,82.1,%,2026-09-05T09:35:00,300,OK
+HST-220,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,79.8,%,2026-09-05T09:40:00,300,OK
+HST-221,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,77.4,%,2026-09-05T09:45:00,300,OK
+HST-222,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,75.1,%,2026-09-05T09:50:00,300,OK
+HST-223,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,72.8,%,2026-09-05T09:55:00,300,OK
+HST-224,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,70.3,%,2026-09-05T10:00:00,300,OK
+HST-225,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,67.9,%,2026-09-05T10:05:00,300,OK
+HST-226,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,65.5,%,2026-09-05T10:10:00,300,OK
+HST-227,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,63.1,%,2026-09-05T10:15:00,300,OK
+HST-228,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,60.7,%,2026-09-05T10:20:00,300,OK
+HST-229,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,58.4,%,2026-09-05T10:25:00,300,OK
+HST-230,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,56.0,%,2026-09-05T10:30:00,300,OK
+HST-231,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,53.5,%,2026-09-05T10:35:00,300,OK
+HST-232,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,51.0,%,2026-09-05T10:40:00,300,OK
+HST-233,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,49.2,%,2026-09-05T10:45:00,300,OK
+HST-234,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,47.5,%,2026-09-05T10:50:00,300,OK
+HST-235,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,45.8,%,2026-09-05T10:55:00,300,OK
+HST-236,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,43.9,%,2026-09-05T11:00:00,300,OK
+HST-237,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,42.1,%,2026-09-05T11:05:00,300,OK
+HST-238,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,40.0,%,2026-09-05T11:10:00,300,OK
+HST-239,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,39.1,%,2026-09-05T11:15:00,300,OK
+HST-240,UPS-1 Battery Level,station:|slot:/Electrical/UPS-1/BatteryLevel,38.0,%,2026-09-05T11:20:00,300,OK
+HST-241,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,420.0,ppm,2026-09-05T08:55:00,300,OK
+HST-242,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,450.0,ppm,2026-09-05T09:00:00,300,OK
+HST-243,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,490.0,ppm,2026-09-05T09:05:00,300,OK
+HST-244,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,540.0,ppm,2026-09-05T09:10:00,300,OK
+HST-245,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,590.0,ppm,2026-09-05T09:15:00,300,OK
+HST-246,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,640.0,ppm,2026-09-05T09:20:00,300,OK
+HST-247,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,690.0,ppm,2026-09-05T09:25:00,300,OK
+HST-248,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,730.0,ppm,2026-09-05T09:30:00,300,OK
+HST-249,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,770.0,ppm,2026-09-05T09:35:00,300,OK
+HST-250,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,820.0,ppm,2026-09-05T09:40:00,300,OK
+HST-251,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,860.0,ppm,2026-09-05T09:45:00,300,OK
+HST-252,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,900.0,ppm,2026-09-05T09:50:00,300,OK
+HST-253,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,940.0,ppm,2026-09-05T09:55:00,300,OK
+HST-254,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,980.0,ppm,2026-09-05T10:00:00,300,OK
+HST-255,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1010.0,ppm,2026-09-05T10:05:00,300,OK
+HST-256,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1050.0,ppm,2026-09-05T10:10:00,300,OK
+HST-257,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1080.0,ppm,2026-09-05T10:15:00,300,OK
+HST-258,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1110.0,ppm,2026-09-05T10:20:00,300,OK
+HST-259,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1140.0,ppm,2026-09-05T10:25:00,300,OK
+HST-260,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1170.0,ppm,2026-09-05T10:30:00,300,OK
+HST-261,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1200.0,ppm,2026-09-05T10:35:00,300,OK
+HST-262,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1225.0,ppm,2026-09-05T10:40:00,300,OK
+HST-263,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1250.0,ppm,2026-09-05T10:45:00,300,OK
+HST-264,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1275.0,ppm,2026-09-05T10:50:00,300,OK
+HST-265,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1295.0,ppm,2026-09-05T10:55:00,300,OK
+HST-266,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1310.0,ppm,2026-09-05T11:00:00,300,OK
+HST-267,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1320.0,ppm,2026-09-05T11:05:00,300,OK
+HST-268,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1330.0,ppm,2026-09-05T11:10:00,300,OK
+HST-269,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1336.0,ppm,2026-09-05T11:15:00,300,OK
+HST-270,Zone-3 CO2 Level,station:|slot:/IAQ/Zone-3/CO2,1340.0,ppm,2026-09-05T11:20:00,300,OK
+HST-271,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,62.8,°C,2026-09-05T08:00:00,600,OK
+HST-272,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,62.1,°C,2026-09-05T08:10:00,600,OK
+HST-273,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,61.3,°C,2026-09-05T08:20:00,600,OK
+HST-274,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,60.5,°C,2026-09-05T08:30:00,600,OK
+HST-275,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,59.7,°C,2026-09-05T08:40:00,600,OK
+HST-276,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,58.9,°C,2026-09-05T08:50:00,600,OK
+HST-277,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,58.2,°C,2026-09-05T09:00:00,600,OK
+HST-278,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,57.4,°C,2026-09-05T09:10:00,600,OK
+HST-279,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,56.8,°C,2026-09-05T09:20:00,600,OK
+HST-280,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,56.1,°C,2026-09-05T09:30:00,600,OK
+HST-281,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,55.5,°C,2026-09-05T09:40:00,600,OK
+HST-282,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,54.9,°C,2026-09-05T09:50:00,600,OK
+HST-283,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,54.2,°C,2026-09-05T10:00:00,600,OK
+HST-284,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,53.5,°C,2026-09-05T10:10:00,600,OK
+HST-285,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,52.9,°C,2026-09-05T10:20:00,600,OK
+HST-286,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,52.3,°C,2026-09-05T10:30:00,600,OK
+HST-287,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,51.6,°C,2026-09-05T10:40:00,600,OK
+HST-288,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,51.0,°C,2026-09-05T10:50:00,600,OK
+HST-289,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,50.4,°C,2026-09-05T11:00:00,600,OK
+HST-290,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,49.7,°C,2026-09-05T11:10:00,600,OK
+HST-291,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,49.1,°C,2026-09-05T11:20:00,600,OK
+HST-292,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,48.4,°C,2026-09-05T11:30:00,600,OK
+HST-293,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,47.7,°C,2026-09-05T11:40:00,600,OK
+HST-294,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,47.1,°C,2026-09-05T11:50:00,600,OK
+HST-295,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,46.4,°C,2026-09-05T12:00:00,600,OK
+HST-296,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,45.7,°C,2026-09-05T12:10:00,600,OK
+HST-297,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,45.0,°C,2026-09-05T12:20:00,600,OK
+HST-298,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,44.5,°C,2026-09-05T12:30:00,600,OK
+HST-299,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,44.3,°C,2026-09-05T12:40:00,600,OK
+HST-300,Domestic Hot Water Temperature,station:|slot:/Plumbing/DHW/Temp,44.1,°C,2026-09-05T12:50:00,600,OK
+HST-301,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,20.1,°C,2026-09-05T11:00:00,60,OK
+HST-302,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,20.3,°C,2026-09-05T11:01:00,60,OK
+HST-303,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,20.5,°C,2026-09-05T11:02:00,60,OK
+HST-304,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,20.6,°C,2026-09-05T11:03:00,60,OK
+HST-305,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,20.7,°C,2026-09-05T11:04:00,60,OK
+HST-306,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,20.9,°C,2026-09-05T11:05:00,60,OK
+HST-307,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,21.1,°C,2026-09-05T11:06:00,60,OK
+HST-308,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,21.2,°C,2026-09-05T11:07:00,60,OK
+HST-309,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,21.4,°C,2026-09-05T11:08:00,60,OK
+HST-310,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,21.6,°C,2026-09-05T11:09:00,60,OK
+HST-311,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,21.7,°C,2026-09-05T11:10:00,60,OK
+HST-312,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,21.8,°C,2026-09-05T11:11:00,60,OK
+HST-313,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,21.9,°C,2026-09-05T11:12:00,60,OK
+HST-314,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,22.1,°C,2026-09-05T11:13:00,60,OK
+HST-315,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,22.2,°C,2026-09-05T11:14:00,60,OK
+HST-316,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,22.3,°C,2026-09-05T11:15:00,60,OK
+HST-317,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,22.4,°C,2026-09-05T11:16:00,60,OK
+HST-318,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,22.6,°C,2026-09-05T11:17:00,60,OK
+HST-319,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,22.8,°C,2026-09-05T11:18:00,60,OK
+HST-320,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,23.0,°C,2026-09-05T11:19:00,60,OK
+HST-321,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,23.2,°C,2026-09-05T11:20:00,60,OK
+HST-322,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,23.5,°C,2026-09-05T11:21:00,60,OK
+HST-323,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,23.8,°C,2026-09-05T11:22:00,60,OK
+HST-324,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,24.1,°C,2026-09-05T11:23:00,60,OK
+HST-325,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,24.4,°C,2026-09-05T11:24:00,60,OK
+HST-326,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,24.8,°C,2026-09-05T11:25:00,60,OK
+HST-327,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,25.1,°C,2026-09-05T11:26:00,60,OK
+HST-328,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,25.4,°C,2026-09-05T11:27:00,60,OK
+HST-329,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,25.9,°C,2026-09-05T11:28:00,60,OK
+HST-330,Server Room Temperature,station:|slot:/HVAC/ServerRoom/Temp,26.8,°C,2026-09-05T11:29:00,60,OK
